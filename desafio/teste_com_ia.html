@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gonzaguinha - Integral</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .bg-red { background-color: #d10000; color: white; }
+        .bg-blue { background-color: #8EACFB; color: white; }
+        
+        section { min-height: 100vh; display: flex; align-items: center; padding: 100px 0; }
+        .display-1 { font-weight: 900; letter-spacing: -2px; }
+        
+        /* Estilo da Letra Completa */
+        .lyrics-full { line-height: 2; font-size: 1.1rem; column-count: 2; column-gap: 50px; }
+        @media (max-width: 768px) { .lyrics-full { column-count: 1; } }
+        
+        .btn-float { position: fixed; bottom: 30px; right: 30px; z-index: 1000; border-radius: 50px; }
+    </style>
+</head>
+<body>
+
+    <section class="bg-red text-center">
+        <div class="container">
+            <h1 class="display-1 mb-4">O QUE É<br>O QUE É?</h1>
+            <p class="fs-4 fw-light">"Eu fico com a pureza da resposta das crianças..."</p>
+            <a href="#poema" class="btn btn-outline-light mt-4 px-5 py-3 rounded-pill">LER O POEMA</a>
+        </div>
+    </section>
+
+    <section id="poema" class="bg-light text-dark">
+        <div class="container">
+            <h2 class="text-center display-4 fw-bold mb-5 text-danger">A Letra</h2>
+            <div class="lyrics-full shadow-sm p-5 bg-white rounded-4">
+                <p>Eu fico com a pureza<br>Da resposta das crianças<br>É a vida, é bonita<br>E é bonita</p>
+                
+                <p>Viver e não ter a vergonha<br>De ser feliz<br>Cantar e cantar e cantar<br>A beleza de ser um eterno aprendiz</p>
+                
+                <p>Ah meu Deus! Eu sei, eu sei<br>Que a vida devia ser bem melhor e será<br>Mas isso não impede que eu repita<br>É bonita, é bonita e é bonita</p>
+                
+                <p>E a vida? E a vida o que é?<br>Diga lá, meu irmão<br>Ela é o batido de um coração?<br>Ela é doce ou é amarga?</p>
+                
+                <p>Ela é a fúria de um furacão?<br>Ela é o brilho de um sol<br>Ou a noite do luar?<br>Ela é a palma de uma mão?</p>
+                
+                <p>Ela é o suor de quem trabalha?<br>É a canção do operário<br>Na sua canção de ninar?</p>
+                
+                <p>Há quem fale que a vida da gente<br>É um nada no mundo<br>É uma gota no tempo<br>Que nem tem segundo</p>
+                
+                <p>Há quem fale que é um divã de dor<br>Onde a gente se deita pra sofrer<br>Há quem fale que a vida é só um dia<br>No jardim da morte, a gente é a flor</p>
+                
+                <p>E há quem diga que a vida é um combate<br>Que a gente só tem que lutar e vencer<br>E outros dizem que a vida é um sopro<br>E que a gente só tem que gozar e esquecer</p>
+                
+                <p>Eu só sei que a vida devia ser bem melhor<br>E será! Mas isso não impede que eu repita<br>É bonita, é bonita e é bonita!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-blue text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 card bg-white text-dark p-5 border-0 shadow-lg rounded-5">
+                    <h3 class="fw-bold mb-4">E a vida, o que é?</h3>
+                    <p class="fs-5">Diga lá, meu irmão</p>
+                    <button class="btn btn-danger btn-lg w-100 mt-3" data-bs-toggle="modal" data-bs-target="#modalQuiz">E a vida?</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalQuiz" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 p-4 shadow">
+                <div id="c" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <h4 class="text-danger">Ela é a batida de um coração?</h4>
+                            <p>Ela é maravida ou é sofrimento
+                            Ela é alegria ou lamento</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h4 class="text-primary">Ela é uma doce ilusão?</h4>
+                            <p>Você diz que é luta e prazer
+                            Ele diz que a vida é viver</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" data-bs-target="#c" data-bs-slide="prev" style="filter:invert(1)"><span class="carousel-control-prev-icon"></span></button>
+                    <button class="carousel-control-next" data-bs-target="#c" data-bs-slide="next" style="filter:invert(1)"><span class="carousel-control-next-icon"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

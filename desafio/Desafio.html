@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inovação Criativa - Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --red: #d10000; --blue: #8EACFB; }
+        body { font-family: 'Montserrat', sans-serif; overflow-x: hidden; }
+        
+        /* Seções Full Screen */
+        section { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 100px 0; position: relative; }
+        
+        .bg-red { background-color: var(--red); color: white; }
+        .bg-blue { background-color: var(--blue); color: white; }
+        
+        /* Tipografia Impactante */
+        .display-huge { font-weight: 300; line-height: 0.9; text-transform: uppercase; }
+        
+        /* Cards Modernos com Hover */
+        .card-creative { border: none; border-radius: 20px; overflow: hidden; transition: 0.4s; }
+        .card-creative:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
+        
+        /* Botão Flutuante */
+        .btn-float { position: fixed; bottom: 30px; right: 30px; z-index: 1000; border-radius: 50px; padding: 15px 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+    <button class="btn btn-dark btn-float fw-bold" data-bs-toggle="modal" data-bs-target="#modalAcao">
+        E a vida, o que é? Diga lá, meu irmão
+    </button>
+
+    <section class="bg-red text-center">
+        <div>
+            <h1 class="display-1 fw-bold">O Que É o Que É?</h1>
+            <p class="lead">Eu fico com a pureza da resposta das crianças<br>É a vida, é bonita e é bonita</p>
+            <a href="#destaques" class="btn btn-outline-light btn-lg mt-4 px-5 rounded-pill shadow">No gogó!
+
+</a>
+        </div>
+    </section>
+
+    <section id="destaques" class="bg-blue">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center text-white mb-5">Viver e não ter a vergonha de ser feliz</h2>
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-md-5 col-lg-4">
+                    <div class="card card-creative h-100 shadow-sm">
+                        <img src="/download (2).jpg" class="card-img-top" alt="Design">
+                        <div class="card-body bg-white text-dark">
+                            <h5 class="fw-bold text-primary mb-3">Cantar e cantar e cantar</h5>
+                            <p class="card-text text-muted">"Ah, meu Deus, eu sei, eu sei
+                            que a vida devia ser bem melhor e será"</p>
+                            <button class="btn btn-success w-100 mt-2">Simbora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="card card-creative h-100 shadow-sm">
+                        <img src="/download (1).jpg" class="card-img-top" alt="Inovação">
+                        <div class="card-body bg-white text-dark">
+                            <h5 class="fw-bold text-success mb-3">A beleza de ser um eterno aprendiz</h5>
+                            <p class="card-text text-muted">"Mas isso não impede que eu repita
+                            É bonita, é bonita e é bonita"</p>
+                            <button class="btn btn-success w-100 mt-2">Povo!</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light text-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 p-5 bg-white shadow rounded-5">
+                    <h2 class="display-4 fw-bold text-center text-danger mb-5">Há quem fale que a vida da gente é um nada no mundo</h2>
+                    <div class="row g-5">
+                        <div class="col-md-6 fs-5 leading-relaxed">
+                            <p class="fw-bold text-dark">Ela é a batida de um coração?</p>
+                            <p class="text-muted">É uma gota, é um tempo que nem dá um segundo</p>
+                            
+                            <p class="fw-bold text-dark mt-4">Ela é uma doce ilusão? Ê-ô</p>
+                            <p class="text-muted">Há quem fale que é um divino mistério profundo</p>
+                        </div>
+                        <div class="col-md-6 fs-5 leading-relaxed">
+                            <p class="fw-bold text-dark">Ela é maravida ou é sofrimento?</p>
+                            <p class="text-muted">É o sopro do criador numa atitude repleta de amor</p>
+                            
+                            <p class="fw-bold text-dark mt-4">Ela é alegria ou lamento?</p>
+                            <p class="text-muted">Você diz que é luta e prazer
+                            Ele diz que a vida é viver</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-dark text-center text-white-50">
+        <div class="container">
+            <p class="mb-0">Desafio bootstrap &copy; 2026. Para Gonzaguinha</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalAcao" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 p-4 shadow-lg rounded-4 bg-white text-dark">
+                <div class="modal-body text-center">
+                    <div id="quizCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                        <div class="carousel-inner p-3">
+                            <div class="carousel-item active">
+                                <h3 class="text-danger fw-bold mb-3">Ela diz que melhor é morrer</h3>
+                                <p class="fs-4 italic">"Pois amada não é e o verbo é sofrer"</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h3 class="text-primary fw-bold mb-3">Eu só sei que confio na moça</h3>
+                                <p class="fs-4 italic">"E na moça eu ponho a força da fé"</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" data-bs-target="#quizCarousel" data-bs-slide="prev" style="filter:invert(1)"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" data-bs-target="#quizCarousel" data-bs-slide="next" style="filter:invert(1)"><span class="carousel-control-next-icon"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
