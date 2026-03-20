@@ -3,11 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inovação Criativa - Landing Page</title>
+    <title>Gonzaguinha - O Que É, O Que É?</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        :root { --red: #d10000; --blue: #8EACFB; }
+        :root { --red: #00a6ffa3; --blue: #8EACFB; }
         body { font-family: 'Montserrat', sans-serif; overflow-x: hidden; }
+        
+        /* Ajuste para o Menu */
+        .navbar { transition: 0.3s; background: rgba(0,0,0,0.1); backdrop-filter: blur(5px); }
+        .nav-link { color: white !important; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
         
         /* Seções Full Screen */
         section { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 100px 0; position: relative; }
@@ -28,6 +32,21 @@
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">GONZAGUINHA</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destaques">A Letra</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#filosofia">Filosofia</a></li>
+            </div>
+        </div>
+    </nav>
+
     <button class="btn btn-dark btn-float fw-bold" data-bs-toggle="modal" data-bs-target="#modalAcao">
         E a vida, o que é? Diga lá, meu irmão
     </button>
@@ -36,9 +55,7 @@
         <div>
             <h1 class="display-1 fw-bold">O Que É o Que É?</h1>
             <p class="lead">Eu fico com a pureza da resposta das crianças<br>É a vida, é bonita e é bonita</p>
-            <a href="#destaques" class="btn btn-outline-light btn-lg mt-4 px-5 rounded-pill shadow">No gogó!
-
-</a>
+            <a href="#destaques" class="btn btn-outline-light btn-lg mt-4 px-5 rounded-pill shadow">No gogó!</a>
         </div>
     </section>
 
@@ -49,11 +66,10 @@
                 
                 <div class="col-md-5 col-lg-4">
                     <div class="card card-creative h-100 shadow-sm">
-                        <img src="/download (2).jpg" class="card-img-top" alt="Design">
+                        <img src="/download (1).jpg" class="card-img-top" alt="Cantar">
                         <div class="card-body bg-white text-dark">
                             <h5 class="fw-bold text-primary mb-3">Cantar e cantar e cantar</h5>
-                            <p class="card-text text-muted">"Ah, meu Deus, eu sei, eu sei
-                            que a vida devia ser bem melhor e será"</p>
+                            <p class="card-text text-muted">"Ah, meu Deus, eu sei, eu sei que a vida devia ser bem melhor e será"</p>
                             <button class="btn btn-success w-100 mt-2">Simbora</button>
                         </div>
                     </div>
@@ -61,11 +77,10 @@
 
                 <div class="col-md-5 col-lg-4">
                     <div class="card card-creative h-100 shadow-sm">
-                        <img src="/download (1).jpg" class="card-img-top" alt="Inovação">
+                        <img src="/download (2).jpg" class="card-img-top" alt="Aprendiz">
                         <div class="card-body bg-white text-dark">
                             <h5 class="fw-bold text-success mb-3">A beleza de ser um eterno aprendiz</h5>
-                            <p class="card-text text-muted">"Mas isso não impede que eu repita
-                            É bonita, é bonita e é bonita"</p>
+                            <p class="card-text text-muted">"Mas isso não impede que eu repita: É bonita, é bonita e é bonita"</p>
                             <button class="btn btn-success w-100 mt-2">Povo!</button>
                         </div>
                     </div>
@@ -75,7 +90,7 @@
         </div>
     </section>
 
-    <section class="bg-light text-dark">
+    <section id="filosofia" class="bg-light text-dark">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10 p-5 bg-white shadow rounded-5">
@@ -93,8 +108,7 @@
                             <p class="text-muted">É o sopro do criador numa atitude repleta de amor</p>
                             
                             <p class="fw-bold text-dark mt-4">Ela é alegria ou lamento?</p>
-                            <p class="text-muted">Você diz que é luta e prazer
-                            Ele diz que a vida é viver</p>
+                            <p class="text-muted">Você diz que é luta e prazer. Ele diz que a vida é viver</p>
                         </div>
                     </div>
                 </div>
